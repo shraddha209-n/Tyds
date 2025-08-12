@@ -1,0 +1,14 @@
+name: Basic Commands1
+
+on: [push]
+
+jobs:
+  demo-commands1:
+    runs-on: ubantu-latest
+
+    steps: 
+      - name: Show current working directory 
+        run: pwd
+
+      - name: List files in the directory
+        run: ls -la
